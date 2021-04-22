@@ -16,24 +16,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYV-UA-gWt">
-                                <rect key="frame" x="107" y="600" width="200" height="100"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYV-UA-gWt">
+                                <rect key="frame" x="107" y="625" width="200" height="100"/>
                                 <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wYi-WB-FtL"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAI-JX-LWM">
-                                <rect key="frame" x="107" y="400" width="200" height="100"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAI-JX-LWM">
+                                <rect key="frame" x="107" y="425" width="200" height="100"/>
                                 <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qi0-f0-M8y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbM-eN-Hja">
-                                <rect key="frame" x="107" y="200" width="200" height="100"/>
+                                <rect key="frame" x="107" y="225" width="200" height="100"/>
                                 <state key="normal" image="us"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h3O-M2-ZAx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="PAI-JX-LWM" firstAttribute="centerX" secondItem="IbM-eN-Hja" secondAttribute="centerX" id="4XC-IW-CHc"/>
-                            <constraint firstItem="IbM-eN-Hja" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="BLb-lD-Z8c"/>
+                            <constraint firstItem="PAI-JX-LWM" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="OCC-8F-OFk"/>
                             <constraint firstItem="iYV-UA-gWt" firstAttribute="top" secondItem="PAI-JX-LWM" secondAttribute="bottom" constant="100" id="OcR-UH-rP8"/>
                             <constraint firstItem="iYV-UA-gWt" firstAttribute="centerX" secondItem="PAI-JX-LWM" secondAttribute="centerX" id="fex-bj-gfM"/>
                             <constraint firstItem="IbM-eN-Hja" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tik-mA-xkU"/>
